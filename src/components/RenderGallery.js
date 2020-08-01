@@ -18,6 +18,11 @@ const renderGallery = [
 		id: 4,
 		title: "XYZ by QWE",
 		image: "test4"
+	},
+	{
+		id: 5,
+		title: "XYZ by QWE",
+		image: "test4"
 	}
 ]
 

@@ -81,8 +81,8 @@ class Body extends Component {
 			}];
 				
 		
-				console.log(data1);
-				console.log(InfoSectionTitles[1].images);
+		console.log("data1 = " + data1);
+		console.log("InfoSectionTitles[1].images = " + InfoSectionTitles[1].images);
 		
 		const infoSectionComponents = InfoSectionTitles.map(data => 
 			<InfoSection 
@@ -116,26 +116,7 @@ class Body extends Component {
 			</div>
 		)
 	}
-	/*const infoSectionComponents = InfoSectionTitles.map(data => 
-		<InfoSection 
-			key={data.id}
-			title={data.title}
-			text= "filler" 
-		/>
-	)
-	
-	return (
-		<div className="body">
-			<div class="parallax"></div>
-			{infoSectionComponents}
-			<div>
-				<ImageSection
-					title={"Kits"}
-				/>
-			</div>
-		</div>
-	);
-	*/
+
 }
 
 export default Body;

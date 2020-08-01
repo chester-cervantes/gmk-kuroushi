@@ -4,7 +4,7 @@ import InfoSection from './InfoSection.js';
 
 class Gallery extends Component {
 	this() {
-		console.log(this.props.name)
+		console.log("this.props.data = " + this.props.data)
 		return (
 			<InfoSection 
 				key={this.props.id}
@@ -17,6 +17,9 @@ class Gallery extends Component {
 		// Pass data to each tile and assign a key
 		return (
 			<div className="tiles">
+				<div className="gallery">
+					{this.this()}
+				</div>
 				{this.props.data.map((data) => {
 					return <Tile data={data} key={data.id} />
 				})}

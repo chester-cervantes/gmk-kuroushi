@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import './ImageSection.css'
 
 class Tile extends React.Component {
 
