@@ -26,7 +26,7 @@ class ImgGallery extends Component {
         return (
             <div>
                 <Image
-                    image={images}
+                    images={images}
                 />
             </div>
         );

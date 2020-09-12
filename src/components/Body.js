@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import InfoSection from './InfoSection.js';
 import InfoSectionTitles from './InfoSectionTitles.js';
 
-import ImgGallery from './ImgGallery.js';
+import Image from './Image.js';
 import './Body.css';
 
 class Body extends Component {
@@ -13,9 +13,13 @@ class Body extends Component {
 		}
 	}
 
-
 	createSections() {
-
+		const images = [
+			'//placekitten.com/1500/500',
+			'//placekitten.com/4000/3000',
+			'//placekitten.com/800/1200',
+			'//placekitten.com/1500/1500',
+		];
 		console.log("InfoSectionTitles[1].images = " + InfoSectionTitles[1].images);
 
 		return InfoSectionTitles.map(data =>
@@ -26,12 +30,12 @@ class Body extends Component {
 				{
 					data.type === "text" &&
 					<p>
-						Thank you for visiting our spacecraft!
+						{data.body}
 					</p>
 				}
 				{
 					data.type === "image" &&
-					<ImgGallery props={data.images}
+					<Image images={data.images}
 					/>
 				}
 			</InfoSection>
@@ -42,7 +46,6 @@ class Body extends Component {
 		const sections = this.createSections();
 		return (
 			<div className="body">
-				{/*<div className="parallax"></div>*/}
 				{sections}
 			</div>
 		)

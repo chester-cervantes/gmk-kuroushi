@@ -4,12 +4,13 @@ import './Footer.css';
 function Footer() {
     return (
         <div className="footer">
-            Follow Us
+            Follow Us!
             <table>
                 <tr>
                     <td>
                         <a href="https://www.instagram.com/chester.cervantes/">
-                            <img 
+                            <img
+                                className="social-media-icons"
                                 src="glyph-logo_May2016.png"           
                                 style={{
                                     height: 30,
@@ -20,8 +21,9 @@ function Footer() {
                     </td>
                     <td>
                         <a href="https://www.instagram.com/chester.cervantes/">
-                            <img 
-                                src="glyph-logo_May2016.png"           
+                            <img
+                                className="social-media-icons"
+                                src="glyph-logo_May2016.png"
                                 style={{
                                     height: 30,
                                     width: 30

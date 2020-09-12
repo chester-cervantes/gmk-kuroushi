@@ -10,9 +10,26 @@ const infoSectionTitles = [
 		type: "image",
 		title: "Kits",
 		images: [
-				"../images/cocoaqua.jpg",
-				"https://images.unsplash.com/photo-1445723356089-6dbb51d9c4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=6e476c6e7ce1adac161295616d1bec05",
-				"https://images.unsplash.com/photo-1445723356089-6dbb51d9c4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=6e476c6e7ce1adac161295616d1bec05"
+			{
+				id: 1,
+				title: "Base",
+				image: '//placekitten.com/1500/500'
+			},
+			{
+				id: 2,
+				title: "Novelties",
+				image: '//placekitten.com/1500/500'
+			},
+			{
+				id: 3,
+				title: "Spacebars",
+				image: '//placekitten.com/4000/3000'
+			},
+			{
+				id: 4,
+				title: "Extras",
+				image: '//placekitten.com/4000/3000'
+			}
 		]
 	},
 	{
@@ -32,9 +49,31 @@ const infoSectionTitles = [
 		type: "image",
 		title: "Renders",
 		images: [
-			"../images/cocoaqua.jpg",
-			"https://images.unsplash.com/photo-1445723356089-6dbb51d9c4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=6e476c6e7ce1adac161295616d1bec05",
-			"https://images.unsplash.com/photo-1445723356089-6dbb51d9c4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=6e476c6e7ce1adac161295616d1bec05"
+			{
+				id: 1,
+				title: "Bauer by Dixie Mech",
+				image: '//placekitten.com/800/1200'
+			},
+			{
+				id: 2,
+				title: "Primus by LouisKB",
+				image: '//placekitten.com/800/1200'
+			},
+			{
+				id: 3,
+				title: "ABC by DEF",
+				image: '//placekitten.com/800/1200'
+			},
+			{
+				id: 4,
+				title: "XYZ by QWE",
+				image: '//placekitten.com/1500/1500'
+			},
+			{
+				id: 5,
+				title: "XYZ by QWE",
+				image: '//placekitten.com/1500/1500'
+			}
 		]
 	},
 	{

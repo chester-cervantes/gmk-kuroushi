@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, {Component} from 'react';
 
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
@@ -12,49 +12,51 @@ class Image extends Component {
         this.state = {
             photoIndex: 0,
             isOpen: false,
+            imageCount: this.props.images.length
         };
     }
 
+    createTable(images) {
+        const COL_LENGTH = 2;
+        var rows = [];
+        for (var i = 0; i < this.state.imageCount / COL_LENGTH; i++) {
+            var cols = [];
+            for (var j = 0; j < COL_LENGTH; j++) {
+                let index = i * COL_LENGTH + j;
+                if (index < this.state.imageCount) {
+                    console.log(index)
+                    console.log(images[index])
+                    cols.push(<td className="image-container">
+                        <img
+                            className="img-border"
+                            src={images[index].image}
+                            width="640" height="360" onClick={() => this.setState({isOpen: true})}/>
+                        <div className="middle">
+                            <div className="text">{images[index].title}</div>
+                        </div>
+                    </td>);
+                }
+            }
+            rows.push(<tr>{cols}</tr>)
+        }
+        return <table className="gallery-table">{rows}</table>;
+    }
+
     render() {
-        const images = [
-            '//placekitten.com/1500/500',
-            '//placekitten.com/4000/3000',
-            '//placekitten.com/800/1200',
-            '//placekitten.com/1500/1500',
-        ];
-        const { photoIndex, isOpen } = this.state;
+        const images = this.props.images;
+        console.log(images);
+        const {photoIndex, isOpen} = this.state;
 
         return (
             <div>
-                <table>
-                    <tr>
-                        <td>
-                            <img src={images[0]}
-                                 width="500" height="600" onClick={() => this.setState({ isOpen: true })}/>
-                        </td>
-                        <td>
-                            <img src={images[1]}
-                                 width="500" height="600" onClick={() => this.setState({ isOpen: true })}/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src={images[2]}
-                                 width="500" height="600" onClick={() => this.setState({ isOpen: true })}/>
-                        </td>
-                        <td>
-                            <img src={images[3]}
-                                 width="500" height="600" onClick={() => this.setState({ isOpen: true })}/>
-                        </td>
-                    </tr>
-                </table>
+                {this.createTable(images)}
 
                 {isOpen && (
                     <Lightbox
-                        mainSrc={images[photoIndex]}
-                        nextSrc={images[(photoIndex + 1) % images.length]}
-                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                        onCloseRequest={() => this.setState({ isOpen: false })}
+                        mainSrc={images[photoIndex].image}
+                        nextSrc={images[(photoIndex + 1) % images.length].image}
+                        prevSrc={images[(photoIndex + images.length - 1) % images.length].image}
+                        onCloseRequest={() => this.setState({isOpen: false})}
                         onMovePrevRequest={() =>
                             this.setState({
                                 photoIndex: (photoIndex + images.length - 1) % images.length,
