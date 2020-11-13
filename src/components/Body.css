@@ -1,9 +1,38 @@
-.body {
-    padding: 20px;
-    color: #f7f2ea;
-    background-color: #171718;
+main {
+    width: 100%;
 }
 
-.body p {
-    font-size: 20px;
+#section-specifications {
+    padding-bottom: 2em;
+}
+
+#section-specifications .content-wrap,
+#section-vendor .content-wrap,
+#section-deskmats .content-wrap,
+#section-renders .content-wrap {
+    padding: 0 1.5em;
+}
+
+#section-kits, #section-renders {
+    padding: 2em 1em 1em;
+}
+
+#section-kits ul, #section-renders ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-kits li, #section-renders li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+}
+
+#section-vendor {
+    padding-bottom: 2em;
+}
+
+#section-deskmats {
+    padding-bottom: 2em;
 }

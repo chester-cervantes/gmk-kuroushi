@@ -13,7 +13,7 @@ const infoSectionTitles = [
 			{
 				id: 1,
 				title: "Base",
-				image: '//placekitten.com/1500/500'
+				image: '../images/cocoaqua.jpg'
 			},
 			{
 				id: 2,
@@ -25,11 +25,6 @@ const infoSectionTitles = [
 				title: "Spacebars",
 				image: '//placekitten.com/4000/3000'
 			},
-			{
-				id: 4,
-				title: "Extras",
-				image: '//placekitten.com/4000/3000'
-			}
 		]
 	},
 	{
@@ -66,11 +61,6 @@ const infoSectionTitles = [
 			},
 			{
 				id: 4,
-				title: "XYZ by QWE",
-				image: '//placekitten.com/1500/1500'
-			},
-			{
-				id: 5,
 				title: "XYZ by QWE",
 				image: '//placekitten.com/1500/1500'
 			}

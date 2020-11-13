@@ -1,21 +1,66 @@
+* {
+	overflow-x: hidden;
+}
+
 body {
-	line-height: 1.4;
-	font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+    line-height: 1.4;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #f7f2ea;
+    background-color: #171718;
+	text-align: center;
+	display: inline-block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h3 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
 }
 
 .title {
-	font-size: 84px;
-	background-color: #f2f7ea;
+    font-size: 84px;
+    background-color: #f2f7ea;
 }
 
-footer {
-	border: grey;
+.App {
+    width: 100%;
 }
 
 
+/*!* For mobile phones: *!*/
+/*[class*="col-"] {*/
+/*	width: 100%;*/
+/*}*/
 
-table, th, td {
-	padding: 8px;
-	margin-left: auto;
-	margin-right: auto;
+@media (min-width: 600px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 3fr)) 1fr;
+	}
+
+	.content-wrap, #section-renders ul, #section-kits ul {
+		grid-column: 2/4;
+	}
+
+	#section-renders ul, #section-kits ul  {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#section-renders li, #section-kits li  {
+		width: 50%;
+	}
+
 }
+

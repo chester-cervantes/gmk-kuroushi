@@ -1,26 +1,17 @@
-.footer{
+footer {
     padding: 20px;
     text-align: center;
     background-color: #f7f2ea;
     color: #171718;
 }
 
-table {
-
-}
-
-
-th {
-    height: 200px;
-    width: 10px;
-}
-td {
-    height: 10px;
-    width: 10px;
+table, td {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-media-icons {
-    border: 0px solid grey;
+    border: 0 solid grey;
 }
 
 .social-media-icons-attribution {

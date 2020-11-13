@@ -1,14 +1,26 @@
-.image-container {
-    position: relative;
-    width: 50%;
-}
-
 .img-border {
     opacity: 1;
-    display: block;
     transition: .4s ease;
     backface-visibility: hidden;
-    border: 3px solid white;
+}
+
+.image-gallery {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.image-container {
+    position: relative;
+    margin: 0 3px 0 3px;
+}
+
+.image-container:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.image-container:hover .middle {
+    opacity: 1;
 }
 
 .middle {
@@ -22,19 +34,6 @@
     text-align: center;
 }
 
-.image-container:hover img {
-    opacity: 0.3;
-    cursor: pointer;
-}
-
-.image-container:hover .middle {
-    opacity: 1;
-}
-
-.imageBlock {
-    padding: 10px;
-}
-
 .text {
     border: 2px solid white;
     border-radius: 15px;
@@ -42,4 +41,18 @@
     color: #f2f7ea;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
 }

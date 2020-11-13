@@ -1,21 +1,15 @@
-
-
-
 body {
-	font-family: Arial;
 	line-height: 1.4;
 	text-align: center;
 }
 
 a {
-	color: #ff2234;
+	color: lightskyblue;
 	text-decoration: none;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 18px;
 }
 
-.title {
-	font-size: 100px;
-}
+
