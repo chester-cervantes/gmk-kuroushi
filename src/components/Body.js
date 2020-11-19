@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import InfoSection from './InfoSection.js';
 import InfoSectionTitles from './InfoSectionTitles.js';
 
-import Image from './Image.js';
+import Renders from './Renders.js';
+import Kits from './Kits.js';
+import Geekhack from './Geekhack.js';
 import './Body.css';
 
 class Body extends Component {
@@ -14,14 +16,6 @@ class Body extends Component {
     }
 
     createSections() {
-        const images = [
-            '//placekitten.com/1500/500',
-            '//placekitten.com/4000/3000',
-            '//placekitten.com/800/1200',
-            '//placekitten.com/1500/1500',
-        ];
-        console.log("InfoSectionTitles[1].images = " + InfoSectionTitles[1].id);
-
         return InfoSectionTitles.map(data =>
             <InfoSection
                 id={data.id}
@@ -35,9 +29,16 @@ class Body extends Component {
                     </p>
                 }
                 {
-                    data.type === "image" &&
-                    <Image images={data.images}
-                    />
+                    data.type === "renders" &&
+                    <Renders />
+                }
+                {
+                    data.type === "kits" &&
+                    <Kits />
+                }
+                {
+                    data.type === "geekhack" &&
+                    <Geekhack link={data.body}/>
                 }
             </InfoSection>
         );
@@ -48,6 +49,7 @@ class Body extends Component {
         return (
             <main>
                 {sections}
+                <br/>
             </main>
         )
     }

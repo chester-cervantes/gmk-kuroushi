@@ -1,14 +1,14 @@
 const infoSectionTitles = [
-	{
-		id: 1,
-		type: "text",
-		title: "Specifications",
-		body: "This kit involves apples, bananas, etc."
-	},
+	// {
+	// 	id: 1,
+	// 	type: "text",
+	// 	title: "Specifications",
+	// 	body: "Text"
+	// },
 	{
 		id: 2,		
-		type: "image",
-		title: "Kits",
+		type: "kits",
+		title: "KITS",
 		images: [
 			{
 				id: 1,
@@ -27,22 +27,22 @@ const infoSectionTitles = [
 			},
 		]
 	},
-	{
-		id: 3,
-		type: "text",
-		title: "Vendor",
-		body: "This kit involves apples, bananas, etc."
-	},
-	{
-		id: 4,
-		type: "text",
-		title: "Deskmats",
-		body: "This kit involves apples, bananas, etc."
-	},
+	// {
+	// 	id: 3,
+	// 	type: "text",
+	// 	title: "Vendors",
+	// 	body: "This kit involves apples, bananas, etc."
+	// },
+	// {
+	// 	id: 4,
+	// 	type: "text",
+	// 	title: "Deskmats",
+	// 	body: "This kit involves apples, bananas, etc."
+	// },
 	{
 		id: 5,
-		type: "image",
-		title: "Renders",
+		type: "renders",
+		title: "RENDERS",
 		images: [
 			{
 				id: 1,
@@ -68,9 +68,15 @@ const infoSectionTitles = [
 	},
 	{
 		id: 6,
+		type: "geekhack",
+		title: "GEEKHACK",
+		body: "https://geekhack.org/index.php?topic=109503.0"
+	},
+	{
+		id: 7,
 		type: "text",
-		title: "Last",
-		body: "This kit involves apples, bananas, etc."
+		title: "COMING SOON",
+		body: "Vendors | Deskmats | Collaborations"
 	}
 ]
 

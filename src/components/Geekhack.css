@@ -1,0 +1,21 @@
+#geekhack-link {
+    border-style: solid;
+    border-color: white;
+    padding: 1em;
+    width: auto;
+    background-color: #171718;
+    color: #f7f2ea;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.geekhack-section {
+    padding: 2em;
+}
+
+#geekhack-link:hover {
+    background-color: #f7f2ea;
+    color: #171718;
+    transition: .4s ease;
+    cursor: pointer;
+}

@@ -2,10 +2,6 @@ main {
     width: 100%;
 }
 
-#section-specifications {
-    padding-bottom: 2em;
-}
-
 #section-specifications .content-wrap,
 #section-vendor .content-wrap,
 #section-deskmats .content-wrap,
@@ -24,9 +20,13 @@ main {
 }
 
 #section-kits li, #section-renders li {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 1em;
+}
+
+#section-specifications {
+    padding-bottom: 2em;
 }
 
 #section-vendor {
@@ -35,4 +35,24 @@ main {
 
 #section-deskmats {
     padding-bottom: 2em;
+}
+
+#section-todo {
+    padding-bottom: 2em;
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #section-kits li, #section-renders li {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+    }
 }

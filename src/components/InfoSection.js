@@ -11,12 +11,10 @@ class InfoSection extends Component {
     }
 
     render() {
-        console.log(this.props.id)
-        console.log("this.props.key")
         return (
             <section className="grid" id={`section-${this.props.title.toLowerCase()}`}>
                 <div className="content-wrap">
-                    <h1>{this.props.title} {this.props.id}</h1>
+                    <h1>{this.props.title}</h1>
                     {this.props.children}
                 </div>
             </section>

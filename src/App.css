@@ -20,7 +20,7 @@ img {
 
 h1, h3 {
 	margin: 0;
-	padding: 1em 0;
+	padding: 0.5em 0 0.5em;
 }
 
 p {
@@ -37,13 +37,17 @@ p {
     width: 100%;
 }
 
+.content-wrap {
+	padding: 0 24px 0;
+}
+
 
 /*!* For mobile phones: *!*/
 /*[class*="col-"] {*/
 /*	width: 100%;*/
 /*}*/
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(auto, 3fr)) 1fr;

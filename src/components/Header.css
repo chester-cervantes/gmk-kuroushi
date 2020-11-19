@@ -2,22 +2,109 @@ header {
 	margin: 0;
 	padding: 0;
 }
+
 #intro {
 	min-height: 200px;
 	text-align: center;
-	background-color: #f7f2ea;
-	color: #171718;
+	background-color: #171718;
+	color: #f7f2ea;
+	border: 2px solid white;
 	alignment: center;
 	width: auto;
+
 }
 
 #intro h1 {
-	padding-top: 80px;
-	padding-bottom: 30px;
+	padding: 1em 1em 0 1em;
 	font-size: 35px;
 }
 
 #intro .content-wrap {
 	font-size: 14px;
 	padding: 0 1.5em;
+}
+
+@media (min-width: 768px) {
+	#intro h1 {
+		font-size: 60px;
+	}
+
+	#intro .content-wrap {
+		font-size: 18px;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.hero {
+	/* Sizing */
+	width: 100vw;
+	height: 100vh;
+
+	/* Flexbox stuff */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* Text styles */
+	text-align: center;
+	color: white; /* ADD THIS LINE */
+
+	/* Background styles */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/gmkkurogewagyuu80.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.hero h1 {
+	/* Text styles */
+	font-size: 5em;
+
+	/* Margins */
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.learn-more {
+	/* Positioning and sizing */
+	display: block;
+	width: auto;
+
+	/* Padding and margins */
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+
+	/* Text styles */
+	background-color: #171718;
+	color: #f7f2ea;
+	text-decoration: none;
+	font-size: 1.3em;
+
+	/* Border styles */
+	border: 3px solid white; /* CHANGE THIS LINE */
+	border-radius: 20px;
+
+	outline:none;
+
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.geekhack-section {
+	padding: 2em;
+}
+
+.learn-more:hover {
+	background-color: #f7f2ea;
+	color: #171718;
+	transition: .4s ease;
+	cursor: pointer;
 }
