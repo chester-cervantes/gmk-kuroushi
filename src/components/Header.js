@@ -1,10 +1,8 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import './Header.css';
 
 
 function Header() {
-    const myRef = useRef(null);
-
     const executeScroll = () => document.getElementById('scroll-here').scrollIntoView()
     return (
         <header>
@@ -12,7 +10,7 @@ function Header() {
                 <div className="hero-inner">
                     <div id="intro">
                         <h1>GMK Kuroge Wagyū</h1>
-                        <p>A GMK keycap set based on the Japanese black cow featuring WoB Hiragana sublegends.
+                        <p id="text">WoB Hiragana Sublegends with a side of wagyū
                         </p>
                     </div>
                     <br/>

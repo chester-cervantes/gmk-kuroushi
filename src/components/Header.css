@@ -15,7 +15,8 @@ header {
 }
 
 #intro h1 {
-	padding: 1em 1em 0 1em;
+	padding: 1em 1em 0em 1em;
+	margin: 0;
 	font-size: 35px;
 }
 
@@ -37,6 +38,11 @@ header {
 body {
 	margin: 0;
 	font-family: sans-serif;
+}
+
+#text {
+	padding-top: 2em;
+	padding-bottom: 4.5em;
 }
 
 .hero {
