@@ -7,6 +7,7 @@ function Geekhack(props) {
     return (
         <div className="geekhack-section">
             <a href={props.link} id="geekhack-link">VISIT THE GEEKHACK INTEREST CHECK HERE</a>
+            <br/>
         </div>
     )
 }

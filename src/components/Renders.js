@@ -1,17 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-import Modal from 'react-modal';
 import FadeInSection from "./FadeInSection";
 import 'react-image-lightbox/style.css';
 import './Image.css';
 import {SRLWrapper} from 'simple-react-lightbox';
 
-Modal.setAppElement('#root');
-
 function Renders() {
     function createTable() {
-        const imageCount = 3;
-        const COL_LENGTH = 2;
         const rows = [];
         let cols = [];
         cols.push(<li className="image-container">

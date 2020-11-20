@@ -1,10 +1,10 @@
 const infoSectionTitles = [
-	// {
-	// 	id: 1,
-	// 	type: "text",
-	// 	title: "Specifications",
-	// 	body: "Text"
-	// },
+	{
+		id: 1,
+		type: "specifications",
+		title: "SPECIFICATIONS",
+		specs: "Colors: WS1 on CR | Doubleshot ABS | Cherry Profile | Hiragana sublegends"
+	},
 	{
 		id: 2,		
 		type: "kits",
