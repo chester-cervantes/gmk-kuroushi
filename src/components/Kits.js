@@ -16,7 +16,7 @@ function Kits() {
             <FadeInSection>
                 <img
                     className="img-border"
-                    src={require('../images/gmkkurogewagyubasekit.png')}/>
+                    src={require('../images/kit-baseoriginalv2.png')}/>
                 <div className="middle">
                     <div className="text">{"Base Kit"} </div>
                 </div>
