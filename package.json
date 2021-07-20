@@ -12,7 +12,7 @@
     "react-image-lightbox": "^5.1.1",
     "react-modal": "^3.11.2",
     "react-modal-image": "^2.5.0",
-    "react-native": "^0.63.2",
+    "react-native": "^0.64.1",
     "react-scripts": "3.4.1",
     "simple-react-lightbox": "^3.3.4-2"
   },
